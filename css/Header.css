@@ -1,0 +1,189 @@
+header{
+    height: 80px;
+    width: 100%;
+    border-bottom: 
+    1px solid rgba(0, 0, 0,0.2);
+    background-color: rgb(247, 247, 247);
+}
+header .izquierda{
+    height: 80px;
+    width: 100%;
+}
+header .izquierda .iconoMenu{
+    float: left;
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header .izquierda .iconoMenu button{
+    height: 35%;
+    width: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+header .izquierda .iconoMenu img{
+    height: 100%;
+    width: 100%;
+}
+header .izquierda .iconoMarca{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header .izquierda .iconoMarca button{
+    height: 80%;
+    width: auto;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-top: 7px;
+}
+header .izquierda .iconoMarca img{
+    height: 100%;
+    width: auto;
+}
+header .derecha{/* Switch */
+    display: none;
+
+}
+header .menuExt{
+    display: none;
+}
+@media (min-width: 670px) {
+    header .izquierda{
+        float: left;
+        width: 30%;
+    }
+    header .izquierda .iconoMenu {
+        justify-content: left;
+        width: 60px;
+    }
+    header .izquierda .iconoMenu img{
+        width: 30px;
+        padding-left: 20px;
+    }
+    header .izquierda .iconoMarca{
+        justify-content: left;
+        width: auto;
+    }
+    header .izquierda .iconoMarca img{
+        padding-left: 40px;
+    }
+    /* Derecha */
+    header .derecha{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        height: 80px;
+    }
+    header .derecha .icono, header .derecha .fotoPerfil{
+        height: 50%;
+        margin-right: 30px;
+    }
+    header .derecha .icono button, header .derecha .fotoPerfil button{
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 7px;
+        transition: 0.4s;
+        border-radius: 4px;
+        position: relative;
+
+    }
+    header .derecha .icono button:hover{
+        background-color: rgb(227, 229, 230);
+    }
+
+    header .derecha img, header .fotoPerfil img{
+        height: 100%;
+    }
+    header .derecha .fotoPerfil{
+        height: 100%;
+    }
+    header .derecha .fotoPerfil button{
+        height: 100%;
+    }
+    header .derecha .fotoPerfil button .foto{
+        height: 30px;
+    }
+    header .derecha .fotoPerfil button .foto img{
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+    }
+    header .derecha .icono, header .derecha .fotoPerfil{
+        position: relative;
+    }
+    header .derecha .icono .alertaRed, header .derecha .fotoPerfil .estadoRed {
+        width: 6px;
+        height: 6px;
+        background-color: rgb(226, 93, 93);
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        right: 4px;
+        border: 1px solid rgb(247, 247, 247);
+    }
+    header .derecha .fotoPerfil .estadoRed {
+        top: 48px;
+        right: 5;
+        width: 9px;
+        height: 9px;
+        border: 2px solid rgb(247, 247, 247);
+    }
+}
+@media (min-width: 1160px) {
+    header .izquierda{
+        width: 15%;
+    }
+    header .izquierda .iconoMenu{
+        display: none;
+    }
+    header .izquierda .iconoMarca{
+        display: block;
+        width: 200px;
+    }
+    header .izquierda .iconoMarca img{
+        padding-top: 5px;
+    }
+    header .menuExt{
+        height: 80px;
+        width: 700px;
+        display: block;
+        float: left;
+    }
+    header .menuExt .el{
+        position: relative;
+        height: 100%;
+        float: left;
+    }
+    header .menuExt .el button{
+        height: 100%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        font-weight: bold;
+        color: rgb(75, 75, 75);
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    header .menuExt .el button:hover{
+        background-color: rgb(227, 229, 230);
+    }
+    header .menuExt .el button img{
+        height: 14px;
+        padding: 10px;
+    }
+
+}

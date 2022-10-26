@@ -1,0 +1,30 @@
+#menu .interior .elementos .elementoMenu .subMenu .el{
+    padding-left: 20px;
+    font-weight: 500;
+}
+/* ANIMACIÓN SUB MENÚ COMPONENT*/
+#openSubMenuComponent {
+    animation-name: openSubMenuComponent;
+    animation-duration: 500ms;
+}
+@keyframes openSubMenuComponent {
+    0% {
+      height: 0px;
+    }
+    100% {
+        height: 200px;
+    }
+}
+#closeSubMenuComponent {
+    animation-name: closeSubMenuComponent;
+    animation-duration: 500ms;
+}
+@keyframes closeSubMenuComponent {
+    0% {
+        height: 200px;
+
+    }
+    100% {
+        height: 0px;
+    }
+}

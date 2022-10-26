@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="./css/Header.css">
+    <link rel="stylesheet" href="./css/Global.css">
+    <link rel="stylesheet" href="./css/Menu.css">
+    <link rel="stylesheet" href="./css/SubMenus.css">
+    <link rel="stylesheet" href="./css/EventElementList.css">
+    <link rel="stylesheet" href="./css/SubMenusMenuComponent.css">
+</head>
+<body>
+    <header>
+        <div>
+            <div class="izquierda">
+                <div class="iconoMenu"><button onclick="abrirMenu();">
+                    <img src="./img/menu.png" alt="Icono menú">
+                </button></div>
+                <div class="iconoMarca"><button>
+                    <img src="./img/logo.png" alt="Logo del producto">
+                </button></div>
+            </div>
+            <div class="menuExt">
+                <div class="el">
+                    <button>Dashboard</button>
+                </div>
+                <div class="el">
+                    <button onclick="openSubMenu('MyBusinessSubMenu')">My Business<img id="MyBusinessSubMenuArrow" src="./img/down.png" alt="Open"></button>
+                    <div class="subMenu" id="MyBusinessSubMenu" style="display: none;">
+                        <button class="el">Orders</button>
+                        <button class="el">Buyer request</button>
+                        <button class="el">Gigs</button>
+                        <button class="el">Earnings</button>
+                        <button class="el">Google workspace</button>
+                    </div>
+                </div>
+                <div class="el">
+                    <button onclick="openSubMenu('GrowthSubMenu')">Growth & Marketing<img id="GrowthSubMenuArrow" src="./img/down.png" alt="Open"></button>
+                    <div class="subMenu" id="GrowthSubMenu" style="display: none;">
+                        <button class="el">Scale your business</button>
+                        <button class="el">Contacts</button>
+                        <button class="el">Visita mi blog</button>
+                    </div>
+                </div>
+                <div class="el">
+                    <button onclick="openSubMenu('AnalyticsSubMenu')">Analytics<img id="AnalyticsSubMenuArrow" src="./img/down.png" alt="Open"></button>
+                    <div class="subMenu" id="AnalyticsSubMenu" style="display: none;">
+                        <button class="el">Overview</button>
+                        <button class="el">Repeat business</button>
+                    </div>
+                </div>
+            </div>
+            <div class="derecha">
+                <div class="icono">
+                    <button  onclick="openSubMenu('NotificationsEventElementList')">
+                        <img src="./img/notification.png" alt="Notification icon">
+                        <div class="alertaRed"></div>
+                    </button>
+                    <div class="eventElementList" id="NotificationsEventElementList" style="display: none;">
+                        <div class="header">
+                            <div class="img">
+                                <img src="./img/notification.png" alt="Notification icon">
+                            </div>
+                            <div class="title">
+                                <p>Notifications (1)</p>
+                            </div>
+                        </div>
+                        <div class="elements">
+                            <button class="el">
+                                <div class="foto">
+                                    <img src="./img/notification.png" alt="FotoAlerta">
+                                </div>
+                                <div class="body">
+                                    <p class="title">Suggested for you.</p>
+                                    <p class="message">Visita mi blog para encontrar artículos de calidad, proyectos y más.</p>
+                                    <p class="time">3d</p>
+                                </div>
+                                <div class="checked">
+                                    <img src="./img/emailopen.png" alt="Email Open">
+                                </div>
+                            </button>
+                            <button class="el">
+                                <div class="foto">
+                                    <img src="./img/notification.png" alt="FotoAlerta">
+                                </div>
+                                <div class="body">
+                                    <p class="title">Suggested for you.</p>
+                                    <p class="message">Visita mi blog para encontrar artículos de calidad, proyectos y más.</p>
+                                    <p class="time">3d</p>
+                                </div>
+                                <div class="checked">
+                                    <img src="./img/email.png" alt="Email Not Open">
+                                </div>
+                            </button>
+                            <button class="el">
+                                <div class="foto">
+                                    <img src="./img/notification.png" alt="FotoAlerta">
+                                </div>
+                                <div class="body">
+                                    <p class="title">Suggested for you.</p>
+                                    <p class="message">Visita mi blog para encontrar artículos de calidad, proyectos y más.</p>
+                                    <p class="time">3d</p>
+                                </div>
+                                <div class="checked">
+                                    <img src="./img/emailopen.png" alt="Email Open">
+                                </div>
+                            </button>
+                        </div>
+                        <div class="footer">
+                            <button class="sound">
+                                <img src="./img/sound.png" alt="Sound">
+                            </button>
+                            <button class="config">
+                                <img src="./img/config.png" alt="Config">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="icono">
+                    <button onclick="openSubMenu('InboxEventElementList')">
+                        <img src="./img/email.png" alt="Inbox icon">
+                        <div class="alertaRed"></div>
+                    </button>
+                    <div class="eventElementList" id="InboxEventElementList" style="display: none;">
+                        <div class="header">
+                            <div class="img">
+                                <img src="./img/email.png" alt="Notification icon">
+                            </div>
+                            <div class="title">
+                                <p>Inbox (0)</p>
+                            </div>
+                        </div>
+                        <div class="elements">
+                            <button class="el">
+                                <div class="foto">
+                                    <img src="./img/FotoPerfil.png" alt="FotoPerfil">
+                                    <div class="isOnline"></div>
+                                </div>
+                                <div class="body">
+                                    <p class="title">Suggested for you.</p>
+                                    <p class="message">Visita mi blog para encontrar artículos de calidad, proyectos y más.</p>
+                                    <p class="time">3d</p>
+                                </div>
+                                <div class="checked">
+                                    <img src="./img/emailopen.png" alt="Email Open">
+                                </div>
+                            </button>
+                            <button class="el">
+                                <div class="foto">
+                                    <img src="./img/FotoPerfil.png" alt="FotoPerfil">
+                                    <div class="isNotOnline"></div>
+                                </div>
+                                <div class="body">
+                                    <p class="title">Suggested for you.</p>
+                                    <p class="message">Visita mi blog para encontrar artículos de calidad, proyectos y más.</p>
+                                    <p class="time">3d</p>
+                                </div>
+                                <div class="checked">
+                                    <img src="./img/emailopen.png" alt="Email Open">
+                                </div>
+                            </button>
+                            <button class="el">
+                                <div class="foto">
+                                    <img src="./img/FotoPerfil.png" alt="FotoPerfil">
+                                    <div class="isOnline"></div>
+                                </div>
+                                <div class="body">
+                                    <p class="title">Suggested for you.</p>
+                                    <p class="message">Visita mi blog para encontrar artículos de calidad, proyectos y más.</p>
+                                    <p class="time">3d</p>
+                                </div>
+                                <div class="checked">
+                                    <img src="./img/emailopen.png" alt="Email Open">
+                                </div>
+                            </button>
+                        </div>
+                        <div class="footer">
+                            <button class="sound">
+                                <img src="./img/sound.png" alt="Sound">
+                            </button>
+                            <button class="config">
+                                <img src="./img/config.png" alt="Config">
+                            </button>
+                            <button class="seAllInInbox">See all in inbox</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="icono">
+                    <button onclick="openSubMenu('QuestionsSubMenu')">
+                        <img src="./img/question.png" alt="Questions icon">
+                    </button>
+                    <div class="subMenu" id="QuestionsSubMenu" style="display: none;">
+                        <button class="el">Help center</button>
+                        <button class="el">Google forum</button>
+                        <button class="el">Google blog</button>
+                        <button class="el">Ask the community</button>
+                        <button class="el">Contact support</button>
+                    </div>
+                </div>
+                <div class="fotoPerfil">
+                    <button onclick="openSubMenu('subMenuDerecha')">
+                        <div class="foto"><img src="./img/FotoPerfil.png" alt=""></div>
+                        <div class="estadoRed"></div>
+                    </button>
+                    <div class="subMenu" id="subMenuDerecha" style="display: none;">
+                        <div class="header">
+                            <div class="izquierda" >
+                                <img id="elPersistente1" src="./img/FotoPerfil.png" alt="Foto de perfil">
+                            </div>
+                            <div class="derecha">
+                                    <span class="arriba">raulacostadev</span>
+                                
+                                    <span class="abajo">raulacostadeveloper@outlook.com</span>
+                                
+                            </div>
+                            <div id="swToBuildSubMenu">
+                                <button>Switch to buying</button>
+                            </div>
+                        </div>
+                        <button class="el">Profile</button>
+                        <button class="el">Refer a Friend</button>
+                        <button class="el">Settings</button>
+                        <button class="el">Billing</button>
+                        <button class="el">English</button>
+                        <button class="el">Logout</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="componentes">
+        <div id="menu" style="display: none;">
+            <button class="exterior" onclick="cerrarMenu();"></button>
+            <div class="interior" id="interiorMenu">
+                <div class="header">
+                    <div class="izquierda" >
+                        <img id="elPersistente1" src="./img/FotoPerfil.png" alt="Foto de perfil">
+                    </div>
+                    <div class="derecha">
+                        <div class="arriba">
+                            <span id="elPersistente2">raulacostadev</span>
+                        </div>
+                        <div class="abajo">
+                            <span id="elPersistente3">raulacostadeveloper@outlook.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementos">
+                    <div class="elementoMenu">
+                        <button>Dashboard</button>
+                    </div>
+                    <div class="elementoMenu">
+                        <button onclick="openSubMenuComp('MyBusinessSubMenuComp')">My business
+                            <img id="MyBusinessSubMenuCompArrow" src="./img/down.png" alt="Open">
+                        </button>
+                        <div class="subMenu" id="MyBusinessSubMenuComp" style="display: none;">
+                            <button class="el">Orders</button>
+                            <button class="el">Buyer request</button>
+                            <button class="el">Gigs</button>
+                            <button class="el">Earings</button>
+                            <button class="el">Google workspace</button>
+                        </div>
+                    </div>
+                    <div class="elementoMenu">
+                        <button onclick="openSubMenuComp('GrowthmarketingSubMenuComp')">Growth & marketing
+                            <img id="GrowthmarketingSubMenuCompArrow" src="./img/down.png" alt="Open">
+                        </button>
+                        <div class="subMenu" id="GrowthmarketingSubMenuComp" style="display: none;">
+                            <button class="el">Scale your business</button>
+                            <button class="el">Contacts</button>
+                            <button class="el">Google learn</button>
+                        </div>
+                    </div>
+                    <div class="elementoMenu">
+                        <button onclick="openSubMenuComp('AnalyticsSubMenuComp')">Analytics
+                            <img id="AnalyticsSubMenuCompArrow" src="./img/down.png" alt="Open">
+                        </button>
+                        <div class="subMenu" id="AnalyticsSubMenuComp" style="display: none;">
+                            <button class="el">Overview</button>
+                            <button class="el">Repeat business</button>
+                        </div>
+                    </div>
+                    <div class="elementoMenu">
+                        <button onclick="openSubMenuComp('HelpresourcesSubMenuComp')">Help & resources
+                            <img id="HelpresourcesSubMenuCompArrow" src="./img/down.png" alt="Open">
+                        </button>
+                        <div class="subMenu" id="HelpresourcesSubMenuComp" style="display: none;">
+                            <button class="el">Help center</button>
+                            <button class="el">Google forum</button>
+                            <button class="el">Google blog</button>
+                            <button class="el">Ask the community</button>
+                            <button class="el">Contact Support</button>
+                        </div>
+                    </div>
+                    <div id="masMenu">
+                        <div class="elementoMenu">
+                            <button onclick="openSubMenuComp('AccountSubMenuComp')">Account
+                                <img id="AccountSubMenuCompArrow" src="./img/down.png" alt="Open">
+                            </button>
+                            <div class="subMenu" id="AccountSubMenuComp" style="display: none;">
+                                <button class="el">Profile</button>
+                                <button class="el">Refer a friend</button>
+                                <button class="el">Settings</button>
+                                <button class="el">Billing</button>
+                            </div>
+                        </div>
+                        <div class="elementoMenu">
+                            <button onclick="openSubMenuComp('LanguageSubMenuComp')">English
+                                <img id="LanguageSubMenuCompArrow" src="./img/down.png" alt="Open">
+                            </button>
+                            <div class="subMenu" id="LanguageSubMenuComp" style="display: none;">
+                                <button class="el">English</button>
+                                <button class="el">Español</button>
+                                <button class="el">Deutsch</button>
+                                <button class="el">Français</button>
+                                <button class="el">Portugues</button>
+                                <button class="el">Italiano</button>
+                            </div>
+                        </div>
+                        <div class="elementoMenu">
+                            <button>Logout</button>
+                        </div>
+                        <div id="swToBuildMenu">
+                            <button>Switch to buying</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <article></article>
+    </section>
+    <footer></footer>
+    <script src="./js/Menu.js"></script>
+    <script src="./js/SubMenuExt.js"></script>
+</body>
+</html>

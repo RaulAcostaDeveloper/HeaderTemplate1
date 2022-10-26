@@ -1,0 +1,120 @@
+.menuExt .el .subMenu, .derecha .fotoPerfil .subMenu, .derecha .icono .subMenu{
+    position: absolute;
+    width: 240px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0,0.2);
+    border-radius: 7px;
+    padding: 5px;
+    top: 70px;
+    z-index: 2;
+    background-color: rgb(247, 247, 247);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    color: rgb(75, 75, 75);
+}
+.derecha .icono .subMenu{
+    top: 50px;
+}
+.derecha .icono .subMenu .el{
+    font-weight: bold;
+}
+.menuExt  .el .subMenu .el, .derecha .fotoPerfil .subMenu .el, .derecha .icono .subMenu .el{
+    font-size: 15px;
+    color: rgb(75, 75, 75);
+    transition: 0.3s;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: none;
+}
+.menuExt  .el .subMenu .el:hover, .derecha .fotoPerfil .subMenu .el:hover, .derecha .icono .subMenu .el:hover{
+    background-color: rgb(227, 229, 230);
+}
+
+.derecha .fotoPerfil .subMenu, .derecha .icono .subMenu{
+    right: 0px;
+    
+}
+.derecha .fotoPerfil .subMenu .header{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.derecha .fotoPerfil .subMenu .header .izquierda{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.derecha .fotoPerfil .subMenu .header .izquierda img{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+.derecha .fotoPerfil .subMenu .header .derecha{
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: left;
+
+}
+.derecha .fotoPerfil .subMenu .header .derecha .arriba{
+    font-weight: bold;
+}
+.derecha .fotoPerfil .subMenu .header .derecha span{
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.derecha .fotoPerfil .subMenu .header #swToBuildSubMenu{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0,0.3);
+
+}
+.derecha .fotoPerfil .subMenu .header #swToBuildSubMenu button{
+    height: 40px;
+    width: 80%;
+    box-shadow: inset 0 0 0 1px black;
+    font-weight: bold; 
+}
+.derecha .fotoPerfil .subMenu .header #swToBuildSubMenu button:hover{
+    background-color: rgb(32, 32, 32);
+    color: rgb(241, 245, 248);
+}
+
+/* ANIMACIÓN SUB MENÚ */
+#openSubMenuAnimation {
+    animation-name: openSubMenu;
+    animation-duration: 500ms;
+}
+@keyframes openSubMenu {
+    0% {
+        width: 70px;
+    }
+    100% {
+        width: 240px;
+    }
+}
+#closeSubMenuAnimation {
+    animation-name: closeSubMenu;
+    animation-duration: 500ms;
+}
+@keyframes closeSubMenu {
+    0% {
+        width: 240px;
+    }
+    100% {
+        width: 70px;
+    }
+}
