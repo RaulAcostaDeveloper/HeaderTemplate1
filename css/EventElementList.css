@@ -122,7 +122,7 @@ header .derecha .icono .eventElementList .footer .seAllInInbox{
 }
 
 /* ANIMACIÓN EVENT ELEMENT LIST */
-#openEventElementList {
+#openEventElementListAnimation {
     animation-name: openEventElementList;
     animation-duration: 500ms;
 }
@@ -139,7 +139,7 @@ header .derecha .icono .eventElementList .footer .seAllInInbox{
 
     }
 }
-#closeSubMenuAnimation {
+#closeEventElementListAnimation {
     animation-name: closeEventElementList;
     animation-duration: 500ms;
 }

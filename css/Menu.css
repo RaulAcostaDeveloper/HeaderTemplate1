@@ -2,13 +2,13 @@
     /* Bordes internos */
     /* box-shadow: inset 0 0 0 1px black; */
 */
-#menu{
+#componentes #menu{
     /* Aquí */
     display: none;
     z-index: 2;
 }
 /* Exterior */
-#menu .exterior{
+#componentes #menu .exterior{
     position:fixed;
     top: 0;
     left: 0;
@@ -19,11 +19,11 @@
     background-color: rgba(0, 0, 0,0.2);
     transition: 0.3s;
 }
-#menu .exterior:hover{
+#componentes #menu .exterior:hover{
     background-color: rgba(0, 0, 0,0.1);
 }
 /* Interior */
-#menu .interior{
+#componentes #menu .interior{
     position: fixed;
     top: 0;
     left: 0;
@@ -34,11 +34,11 @@
     color: rgb(75, 75, 75);
 }
 /* Header */
-#menu .interior .header{
+#componentes #menu .interior .header{
     height: 80px;
     width: 100%; 
 }
-#menu .interior .header .izquierda{
+#componentes #menu .interior .header .izquierda{
     float: left;
     width: 20%;
     height: 100%;
@@ -47,12 +47,12 @@
     align-items: center;
 }
 
-#menu .interior .header .izquierda img{
+#componentes #menu .interior .header .izquierda img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-#menu .interior .header .derecha{
+#componentes #menu .interior .header .derecha{
     display: inline-block;
     width: 80%;
     height: 100%;
@@ -63,7 +63,7 @@
     flex-wrap: wrap;
 }
 /* Overflow efectivo */
-#menu .interior .header .derecha span{
+#componentes #menu .interior .header .derecha span{
     display: block;
     width: 90%;
     text-overflow: ellipsis;
@@ -71,29 +71,29 @@
     overflow: hidden;
 }
 
-#menu .interior .header .derecha .arriba{
+#componentes #menu .interior .header .derecha .arriba{
     font-weight: bold;
     color: rgb(32, 32, 32);
 }
 
 /* Elementos */
-#menu .interior .elementos{
+#componentes #menu .interior .elementos{
     width: 100%;
     height: 87%;
     overflow: auto;
     transition: 0.4s;
 }
-#menu .interior .elementos #masMenu{
+#componentes #menu .interior .elementos #masMenu{
     display: block;
 }
-#menu .interior .elementos #masMenu #swToBuildMenu{
+#componentes #menu .interior .elementos #masMenu #swToBuildMenu{
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#menu .interior .elementos #masMenu #swToBuildMenu button{
+#componentes #menu .interior .elementos #masMenu #swToBuildMenu button{
     width: 180px;
     height: 40px;
     border-radius: 4px;
@@ -103,11 +103,11 @@
     border: 1px solid black;
     transition: 0.4s;
 }
-#menu .interior .elementos #masMenu #swToBuildMenu button:hover{
+#componentes #menu .interior .elementos #masMenu #swToBuildMenu button:hover{
     background-color: rgb(32, 32, 32);
     color: rgb(241, 245, 248);
 }
-#menu .interior .elementos .elementoMenu{
+#componentes #menu .interior .elementos .elementoMenu{
     width: auto;
     height: auto;
     margin-left: 10px;
@@ -115,7 +115,7 @@
     border-bottom: 1px solid rgba(0, 0, 0,0.3);
     transition: 0.4s;
 }
-#menu .interior .elementos .elementoMenu button{
+#componentes #menu .interior .elementos .elementoMenu button{
     height: 60px;
     width: 100%;
     border: none;
@@ -130,14 +130,14 @@
     padding-left: 5px;
     padding-right: 5px;
 }
-#menu .interior .elementos .elementoMenu button:hover{
+#componentes #menu .interior .elementos .elementoMenu button:hover{
     background-color: rgb(227, 229, 230);
 }
-#menu .interior .elementos .elementoMenu button img{
+#componentes #menu .interior .elementos .elementoMenu button img{
     width: 16px;
 }
 @media (min-width: 670px) {
-    #menu .interior .elementos #masMenu{
+    #componentes #menu .interior .elementos #masMenu{
         display: none;
     }
 }

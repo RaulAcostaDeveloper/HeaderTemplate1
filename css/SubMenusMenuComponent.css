@@ -1,9 +1,9 @@
-#menu .interior .elementos .elementoMenu .subMenu .el{
+#componentes #menu .interior .elementos .elementoMenu .subMenu .el{
     padding-left: 20px;
     font-weight: 500;
 }
 /* ANIMACIÓN SUB MENÚ COMPONENT*/
-#openSubMenuComponent {
+#openSubMenuComponentAnimation {
     animation-name: openSubMenuComponent;
     animation-duration: 500ms;
 }
@@ -15,7 +15,7 @@
         height: 200px;
     }
 }
-#closeSubMenuComponent {
+#closeSubMenuComponentAnimation {
     animation-name: closeSubMenuComponent;
     animation-duration: 500ms;
 }
