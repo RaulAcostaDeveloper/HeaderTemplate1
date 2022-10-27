@@ -98,7 +98,7 @@ const animacionElClose = (el)=>{
     el.style.animationFillMode="initial";
     setTimeout(() => {      
         el.style.display='none';
-     }, 400);
+     }, 300);
 }
 
 const animacionElListOpen = (el)=>{
@@ -113,5 +113,5 @@ const animacionElListClose = (el)=>{
     el.style.animationFillMode="initial";
     setTimeout(() => {      
         el.style.display='none';
-     }, 400);
+     }, 300);
 }

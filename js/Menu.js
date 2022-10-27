@@ -129,5 +129,5 @@ const animacionElSubMenuCompClose = (el)=>{
   el.style.animationFillMode="initial";
   setTimeout(() => {      
       el.style.display='none';
-   }, 400);
+   }, 300);
 }
