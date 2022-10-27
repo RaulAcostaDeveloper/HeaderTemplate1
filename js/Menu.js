@@ -12,6 +12,7 @@ const abrirMenu = ()=>{
    pers1.style.display = "block";
    pers2.style.display = "block";
    pers3.style.display = "block";
+
  }
  const cerrarMenu = ()=>{
    interiorMenu.style.animationName="closeMenu";
@@ -22,7 +23,7 @@ const abrirMenu = ()=>{
    pers3.style.display = "none";
    setTimeout(() => {      
       menu.style.display='none';
-   }, 500);
+   }, 300);
  }
 //  Sub Menús
 

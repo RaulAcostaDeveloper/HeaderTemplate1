@@ -84,8 +84,8 @@ header .menuExt{
         height: 80px;
     }
     header .derecha .icono, header .derecha .fotoPerfil{
-        height: 50%;
-        margin-right: 30px;
+        height: 47%;
+        margin-right: 20px;
     }
     header .derecha .icono button, header .derecha .fotoPerfil button{
         height: 100%;
@@ -113,6 +113,7 @@ header .menuExt{
     }
     header .derecha .fotoPerfil button .foto{
         height: 30px;
+        margin-bottom: 5px;
     }
     header .derecha .fotoPerfil button .foto img{
         border-radius: 50%;
